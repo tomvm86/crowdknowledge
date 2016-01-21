@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Crowdknowledge</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,700,500,600' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,400italic' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+  </head>
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Crowdknowledge</a></h1>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+					<img src="images/logo.png" alt="">
+						<div class="inner">
+							<h2>Crowdknowledge</h2>
+						</div>
+						<a href="#one" class="next scrolly">&#8595;</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+							<h1>Promotie Video</h1>
+							 <video id="vid" width="1080" height="560" preload controls poster="images/trashbin.png">>
+       						 <source src="vid/crowdKnowledge.m4v" />
+        						<source src="vid/crowdKnowledge.ogv" />
+        					<source src="vid/crowdKnowledge.webm" />
+      						</video>
+      					</header>
+						<a href="#three" class="next2 scrolly">&#8595;</a>
+					</section>
+
+
+
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>De Crowdknowledge Map</h2>
+								<p>Bekijk in een map de evenementen agenda van de Amsterdamse binnenstad.<br />
+								Zie per maand wat, en waar de meest bezochte evenementen zijn.</p>
+							</header>
+							<p>Elke evenementen wordt weergegeven als kleur.<br />
+							Elke kleur geeft het de aantal bezoekers aan.</p>
+							<img src="images/legend.png" alt="">
+
+							<p>Klik op een evenment om de exacte aantal bezoekers te zien.<br />
+							Gemeente Amstedam kan zijn diensten aanpassen op de drukte van bepaalde locaties,<br />
+							of tijdens bepaalde evenementen.</p>
+						</div>
+						<a href="#cta" class="next2 scrolly">&#8595;</a>
+					</section>
+
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+
+					<div id="map"><div>
+						</div>
+					</section>
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; CrowdKnowledge</li><li>Informotion</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+
+
+    <script>
+      window.onload = function() {
+        var options = {
+        center: [52.371350, 4.896973],
+        zoom: 20,
+        cartodb_logo: false
+      };
+        var vizjson = 'https://tomvm86.cartodb.com/api/v2/viz/279cd99a-abcb-11e5-9ffe-0e787de82d45/viz.json';
+        cartodb.createVis('map', vizjson);
+      };
+    </script>
+
+
+
+	</body>
+</html>
